@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60D354911DFCDF4D00320B44 /* GateKeeper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 60D354901DFCDF4D00320B44 /* GateKeeper.hpp */; };
-		60D354931DFCDF4D00320B44 /* GateKeeper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60D354921DFCDF4D00320B44 /* GateKeeper.cpp */; };
+		60D354911DFCDF4D00320B44 /* GateKeeperDriver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 60D354901DFCDF4D00320B44 /* GateKeeperDriver.hpp */; };
+		60D354931DFCDF4D00320B44 /* GateKeeperDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60D354921DFCDF4D00320B44 /* GateKeeperDriver.cpp */; };
+		60D3549F1DFCE0FC00320B44 /* GateKeeperDriverClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D3549A1DFCE0FC00320B44 /* GateKeeperDriverClient.h */; };
+		60D354A01DFCE0FC00320B44 /* GateKeeperDriverClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60D3549B1DFCE0FC00320B44 /* GateKeeperDriverClient.cpp */; };
+		60D354A11DFCE0FC00320B44 /* GateKeeperSharesPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D3549C1DFCE0FC00320B44 /* GateKeeperSharesPayload.h */; };
+		60D354A21DFCE0FC00320B44 /* GateKeeperDriverQueueManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60D3549D1DFCE0FC00320B44 /* GateKeeperDriverQueueManager.cpp */; };
+		60D354A31DFCE0FC00320B44 /* GateKeeperDriverQueueManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 60D3549E1DFCE0FC00320B44 /* GateKeeperDriverQueueManager.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		60D3548D1DFCDF4D00320B44 /* GateKeeper.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GateKeeper.kext; sourceTree = BUILT_PRODUCTS_DIR; };
-		60D354901DFCDF4D00320B44 /* GateKeeper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GateKeeper.hpp; sourceTree = "<group>"; };
-		60D354921DFCDF4D00320B44 /* GateKeeper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GateKeeper.cpp; sourceTree = "<group>"; };
+		60D354901DFCDF4D00320B44 /* GateKeeperDriver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GateKeeperDriver.hpp; sourceTree = "<group>"; };
+		60D354921DFCDF4D00320B44 /* GateKeeperDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GateKeeperDriver.cpp; sourceTree = "<group>"; };
 		60D354941DFCDF4D00320B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60D3549A1DFCE0FC00320B44 /* GateKeeperDriverClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateKeeperDriverClient.h; sourceTree = "<group>"; };
+		60D3549B1DFCE0FC00320B44 /* GateKeeperDriverClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GateKeeperDriverClient.cpp; sourceTree = "<group>"; };
+		60D3549C1DFCE0FC00320B44 /* GateKeeperSharesPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateKeeperSharesPayload.h; sourceTree = "<group>"; };
+		60D3549D1DFCE0FC00320B44 /* GateKeeperDriverQueueManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GateKeeperDriverQueueManager.cpp; sourceTree = "<group>"; };
+		60D3549E1DFCE0FC00320B44 /* GateKeeperDriverQueueManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GateKeeperDriverQueueManager.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +58,13 @@
 		60D3548F1DFCDF4D00320B44 /* GateKeeper */ = {
 			isa = PBXGroup;
 			children = (
-				60D354901DFCDF4D00320B44 /* GateKeeper.hpp */,
-				60D354921DFCDF4D00320B44 /* GateKeeper.cpp */,
+				60D3549A1DFCE0FC00320B44 /* GateKeeperDriverClient.h */,
+				60D3549B1DFCE0FC00320B44 /* GateKeeperDriverClient.cpp */,
+				60D3549C1DFCE0FC00320B44 /* GateKeeperSharesPayload.h */,
+				60D3549D1DFCE0FC00320B44 /* GateKeeperDriverQueueManager.cpp */,
+				60D3549E1DFCE0FC00320B44 /* GateKeeperDriverQueueManager.hpp */,
+				60D354901DFCDF4D00320B44 /* GateKeeperDriver.hpp */,
+				60D354921DFCDF4D00320B44 /* GateKeeperDriver.cpp */,
 				60D354941DFCDF4D00320B44 /* Info.plist */,
 			);
 			path = GateKeeper;
@@ -62,7 +77,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60D354911DFCDF4D00320B44 /* GateKeeper.hpp in Headers */,
+				60D354A11DFCE0FC00320B44 /* GateKeeperSharesPayload.h in Headers */,
+				60D354911DFCDF4D00320B44 /* GateKeeperDriver.hpp in Headers */,
+				60D354A31DFCE0FC00320B44 /* GateKeeperDriverQueueManager.hpp in Headers */,
+				60D3549F1DFCE0FC00320B44 /* GateKeeperDriverClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60D354931DFCDF4D00320B44 /* GateKeeper.cpp in Sources */,
+				60D354A01DFCE0FC00320B44 /* GateKeeperDriverClient.cpp in Sources */,
+				60D354A21DFCE0FC00320B44 /* GateKeeperDriverQueueManager.cpp in Sources */,
+				60D354931DFCDF4D00320B44 /* GateKeeperDriver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
