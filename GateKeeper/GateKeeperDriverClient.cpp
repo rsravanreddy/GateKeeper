@@ -9,7 +9,7 @@
 #include <IOKit/IOLib.h>
 #include <IOKit/IOKitKeys.h>
 #include <libkern/OSByteOrder.h>
-#include "GateKeeperSharesPayload.h"
+#include "GateKeeperSharedPayload.h"
 #include "GateKeeperDriverClient.h"
 #include "GateKeeperDriverQueueManager.hpp"
 
