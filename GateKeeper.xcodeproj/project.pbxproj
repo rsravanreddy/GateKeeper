@@ -1,0 +1,275 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60D354911DFCDF4D00320B44 /* GateKeeper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 60D354901DFCDF4D00320B44 /* GateKeeper.hpp */; };
+		60D354931DFCDF4D00320B44 /* GateKeeper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60D354921DFCDF4D00320B44 /* GateKeeper.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		60D3548D1DFCDF4D00320B44 /* GateKeeper.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GateKeeper.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D354901DFCDF4D00320B44 /* GateKeeper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GateKeeper.hpp; sourceTree = "<group>"; };
+		60D354921DFCDF4D00320B44 /* GateKeeper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GateKeeper.cpp; sourceTree = "<group>"; };
+		60D354941DFCDF4D00320B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60D354891DFCDF4D00320B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60D354831DFCDF4D00320B44 = {
+			isa = PBXGroup;
+			children = (
+				60D3548F1DFCDF4D00320B44 /* GateKeeper */,
+				60D3548E1DFCDF4D00320B44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60D3548E1DFCDF4D00320B44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60D3548D1DFCDF4D00320B44 /* GateKeeper.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60D3548F1DFCDF4D00320B44 /* GateKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				60D354901DFCDF4D00320B44 /* GateKeeper.hpp */,
+				60D354921DFCDF4D00320B44 /* GateKeeper.cpp */,
+				60D354941DFCDF4D00320B44 /* Info.plist */,
+			);
+			path = GateKeeper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		60D3548A1DFCDF4D00320B44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60D354911DFCDF4D00320B44 /* GateKeeper.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		60D3548C1DFCDF4D00320B44 /* GateKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60D354971DFCDF4D00320B44 /* Build configuration list for PBXNativeTarget "GateKeeper" */;
+			buildPhases = (
+				60D354881DFCDF4D00320B44 /* Sources */,
+				60D354891DFCDF4D00320B44 /* Frameworks */,
+				60D3548A1DFCDF4D00320B44 /* Headers */,
+				60D3548B1DFCDF4D00320B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GateKeeper;
+			productName = GateKeeper;
+			productReference = 60D3548D1DFCDF4D00320B44 /* GateKeeper.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60D354841DFCDF4D00320B44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = sravan;
+				TargetAttributes = {
+					60D3548C1DFCDF4D00320B44 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 60D354871DFCDF4D00320B44 /* Build configuration list for PBXProject "GateKeeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 60D354831DFCDF4D00320B44;
+			productRefGroup = 60D3548E1DFCDF4D00320B44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60D3548C1DFCDF4D00320B44 /* GateKeeper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60D3548B1DFCDF4D00320B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60D354881DFCDF4D00320B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60D354931DFCDF4D00320B44 /* GateKeeper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		60D354951DFCDF4D00320B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		60D354961DFCDF4D00320B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		60D354981DFCDF4D00320B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				INFOPLIST_FILE = GateKeeper/Info.plist;
+				MODULE_NAME = com.sravan.GateKeeper;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sravan.GateKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		60D354991DFCDF4D00320B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				INFOPLIST_FILE = GateKeeper/Info.plist;
+				MODULE_NAME = com.sravan.GateKeeper;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sravan.GateKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60D354871DFCDF4D00320B44 /* Build configuration list for PBXProject "GateKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60D354951DFCDF4D00320B44 /* Debug */,
+				60D354961DFCDF4D00320B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60D354971DFCDF4D00320B44 /* Build configuration list for PBXNativeTarget "GateKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60D354981DFCDF4D00320B44 /* Debug */,
+				60D354991DFCDF4D00320B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60D354841DFCDF4D00320B44 /* Project object */;
+}
