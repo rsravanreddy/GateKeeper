@@ -171,40 +171,6 @@ int GateKeeperDriverQueueManager::VnodeCallback(const kauth_cred_t cred,
     char vnode_str[MAX_VNODE_ID_STR];
     snprintf(vnode_str, MAX_VNODE_ID_STR, "%llu", vnode_id);
     
-    // Fetch decision
-//    auto returnedAction = FetchDecision(cred, vp, vnode_id, vnode_str);
-    
-    // If file has dirty blocks, remove from cache and deny. This would usually
-    // be the case if a file has been written to and flushed but not yet
-    // closed.
-    if (vnode_hasdirtyblks(vp)) {
-//        CacheCheck(vnode_str);
-//        returnedAction = ACTION_RESPOND_DENY;
-    }
-//    
-//    switch (returnedAction) {
-//        case ACTION_RESPOND_ALLOW: {
-//            auto proc = vfs_context_proc(ctx);
-//            if (proc) {
-//                auto pidWrapper = new SantaPIDAndPPID;
-//                pidWrapper->pid = proc_pid(proc);
-//                pidWrapper->ppid = proc_ppid(proc);
-//                lck_rw_lock_exclusive(vnode_pid_map_lock_);
-//                vnode_pid_map_->setObject(vnode_str, pidWrapper);
-//                lck_rw_unlock_exclusive(vnode_pid_map_lock_);
-//                pidWrapper->release();
-//            }
-//            return KAUTH_RESULT_ALLOW;
-//        }
-//        case ACTION_RESPOND_DENY:
-//            *errno = EPERM;
-//            return KAUTH_RESULT_DENY;
-//        default:
-//            // NOTE: Any unknown response or error condition causes us to fail open.
-//            // Whilst from a security perspective this is bad, it's important that
-//            // we don't break user's machines.
-//            return KAUTH_RESULT_DEFER;
-//    }
     return KAUTH_RESULT_DEFER;
 
 }
@@ -229,16 +195,7 @@ void GateKeeperDriverQueueManager::FileOpCallback(
             
             char vnode_str[MAX_VNODE_ID_STR];
             snprintf(vnode_str, MAX_VNODE_ID_STR, "%llu", vnode_id);
-            
-//            lck_rw_lock_shared(vnode_pid_map_lock_);
-//            auto pidWrapper = OSDynamicCast(
-//                                            SantaPIDAndPPID, vnode_pid_map_->getObject(vnode_str));
-//            if (pidWrapper) {
-//                message->pid = pidWrapper->pid;
-//                message->ppid = pidWrapper->ppid;
-//            }
-//            lck_rw_unlock_shared(vnode_pid_map_lock_);
-            
+                    
             PostToLogQueue(message);
             delete message;
             return;
